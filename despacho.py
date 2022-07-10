@@ -35,8 +35,8 @@ monthly_demands = [float(x.rstrip()) for x in monthly_demands]
 
 
 # Get the monthly tributaries.
-monthly_tributaries = input_lines[2].split(' ')
-monthly_tributaries = [float(x.rstrip()) for x in monthly_tributaries]
+monthly_water_input = input_lines[2].split(' ')
+monthly_water_input = [float(x.rstrip()) for x in monthly_water_input]
 
 # Get the v_ini, v_min, v_max, and k.
 v_ini, v_min, v_max, k = input_lines[3].split(' ')
@@ -56,7 +56,7 @@ ambiental_cost = float(input_lines[5])
 # Debug log all the read variables to the console.
 logger.debug('months: %s', months)
 logger.debug('monthly_demands: %s', monthly_demands)
-logger.debug('monthly_tributaries: %s', monthly_tributaries)
+logger.debug('monthly_water_input: %s', monthly_water_input)
 logger.debug('v_ini: %s', v_ini)
 logger.debug('v_min: %s', v_min)
 logger.debug('v_max: %s', v_max)
