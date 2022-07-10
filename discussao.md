@@ -48,6 +48,8 @@ p_h_i = producao da hidro em um mês i
 v_i = volume em um mes i
 v_i_1 = volume em um mes i-1
 
+dv_i = diferença de volume de i para i-1
+
 w_p_i = "quantidade de água" usado para a produção em um mêsi
 
 c_t_i = custo de produção da termo em um mês
@@ -55,15 +57,25 @@ c_h_i = custo de produção da hidro em um mês
 
 p_i = producao total em um mês i
 
+## Variáveis criadas por limitações do simplex
+https://stackoverflow.com/a/28933583
+dv_Pi = 
+dv_Ni = 
+
 # Restrições high-level
-- Todas devem ser maior que 0
+objetivo: minimizar o custo
+- min ∑(ci)
+
+- Todas devem ser maior ou igual que 0
     - `p_t_i, p_h_i, v_i, c_t_i, c_h_i, p_i ≥ 0`
 - Produção total é da termo + hidro
     - `p_i = p_t_i + p_h_i`
 - Custo da termo é a produção vezes o CT
     - `c_t_i = p_t_i * CT`
 - Custo da hidro é a diferença de volume
-    - `c_h_i = |v_i - v_i_1| * CA`
+    - `c_h_i = |dv_i| * CA`
+- Diferença de volume é volume de um mês menos do outro
+    - `dv_i = v_i - v_i_1`
 - Produção da hidro em um mês deve ser menor que o máximo
     - `p_h_i < t_max`
 - Volume em um mês i nunca deve ser maior que o máximo
@@ -80,6 +92,5 @@ p_i = producao total em um mês i
     - `p_i ≥ d_i`
 - Custo do mês i é igual a soma dos custos
     - `c_i = c_t_i + c_h_i`
-
-objetivo: minimizar o custo
-min ∑(ci)
+- v_0 é o volume inicial
+    - `v_0 = v_ini`
