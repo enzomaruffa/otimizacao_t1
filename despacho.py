@@ -7,7 +7,6 @@ import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
-
 def add_debug_log(logger):
     class LevelFilter(object):
         def __init__(self, level):

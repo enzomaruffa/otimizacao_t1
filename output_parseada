@@ -1,0 +1,35 @@
+
+Value of objective function: 175.50000000
+
+Actual values of the variables:
+c_1                           5.5
+c_2                            24
+c_3                           146
+c_h_1                         1.5
+c_h_2                           0
+c_h_3                           0
+c_t_1                           4
+c_t_2                          24
+c_t_3                         146
+dv_N1                         300
+dv_N2                           0
+dv_N3                           0
+dv_P1                           0
+dv_P2                           0
+dv_P3                           0
+p_1                           900
+p_2                          1000
+p_3                           950
+p_h_1                         880
+p_h_2                         880
+p_h_3                         220
+p_t_1                          20
+p_t_2                         120
+p_t_3                         730
+v_0                           500
+v_1                           200
+v_2                           200
+v_3                           200
+w_p_1                         800
+w_p_2                         800
+w_p_3                         200

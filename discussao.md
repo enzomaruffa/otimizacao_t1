@@ -1,28 +1,4 @@
-# Problema do Sorvete
-Minimizar custo de estocar em paralelo a minimizar a variação de custo, ou seja:
-- `min 50∑{i = 1, 12}(|xi, xi-1|) + 20∑{i = 1, 12}(si)`
 
-## Solução
-Definir duas variáveis:
-- quanto produzir a mais que o mês anterior,
-- quanto produzir a menos
-- 	`xi - xi-1 = yi` [incremento na produção] `- zi` [decremento na produção]
-- 	`= |xi - xi-1| = yi - zi`
-
-Assim, temos que
-
-- `min 50∑{i = 1, 12}(yi) + 50∑{i = 1, 12}(zi) + 20∑{i = 1, 12}(si)`
-
-s.a.:
-- `xi + si-1 - si = di ∀ i = 1…12`
-- `xi - xi-1 = yi - zi ∀ i = 1…12`
-- `xi, yi, zi, si ≥ 0 ∀ i = 1…12`
-- `x0 = 0`
-- `s0 = 0`
-- `s12 = 0`
-
-# Link
-https://personal.utdallas.edu/~scniu/OPRE-6201/documents/LP01-Production-Planning.pdf
 
 # Rascunho
 
