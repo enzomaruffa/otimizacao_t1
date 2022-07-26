@@ -1,0 +1,12 @@
+# Otimização - Trabalho 1
+
+## Relação de Arquivos
+
+- emm17.pdf: relatório do trabalho
+- entradas/
+    - `x.input`, `x.output`: arquivos de entrada para teste do programa. O arquivo de saída lista o valor de algumas das variáveis relevantes para a verificação de corretude, não estando no formato de saída do lp_solve
+- fontes/
+    - despacho.py: Arquivo principal do trabalho, escrito em Python 3. Deve ser executado no formato `python3 despacho.py < <arquivo_de_entrada>`. A saída corresponde a um programa de entrada para o lp_solve.
+
+## Observações Gerais
+- A explicação de cada caso entrada/saída pode ser encontrada no artigo, emm17.pdf.

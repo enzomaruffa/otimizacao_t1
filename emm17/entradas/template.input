@@ -1,0 +1,6 @@
+<n_de_meses>
+<demanda 0> <demanda 1> ... <demanda n>
+<afluencia 0> <afluencia 1> ... <afluencia n>
+<v_ini> <v_min> <v_max> <k>
+<t_max> <CT>
+<CA>
